@@ -17,15 +17,14 @@
 }
 /* стили для поля ввода */
 #search .input {
-    width: 183px;
-    height: 28px;
-    /* внутренний отступ справа (37px) делаем больше левого,
+    width: 180px;
+    height: 29px;
+    /* внутренний отступ справа (29px) делаем больше левого,
     ** т.к. там будет размещена кнопка отправки	*/
     padding: 0 29px 1px 15px;
-    /*background: #EEE url(https://lh4.googleusercontent.com/-EllJnywnmlY/UAaKJYSYYMI/AAAAAAAABUU/IaRo-yUcRmc/s235/search.png) no-repeat;*/
     background:#547689;
-    color: #272626;
-    font: 13px/28px 'Open Sans', regular;
+    color: #a9b7c0;
+    /*font: 13px/28px 'Open Sans', regular;*/
     outline: none;
 
 }

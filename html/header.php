@@ -3,17 +3,17 @@
 
 <div class="header-container">
     <div class="contact">
-        <div>
-            <img src="../images/header/tel_header.png" alt="">   
+        <div class="contactTel">
+            <img src="../images/header/tel_header.png" class="imgTel" alt="">
             +375 29 7312124
         </div>
-        <div>
-            <img src="../images/header/adr_header.png" alt="">
+        <div class="contactAddress">
+            <img src="../images/header/adr_header.png" class="imgAddress" alt="">
             г.Гомель, ул.Рабочая, 17
         </div>
     </div>
     <div class="logo">
-        <img src="../../images/main/img/logo.png" /></div>
+        <img src="../../images/main/img/logo.png" class="imgLogo"/></div>
 
 <!--    <form name="search" method="post" action="search/index.php">-->
 <!--        <input type="search" name="query" placeholder="Поиск">-->

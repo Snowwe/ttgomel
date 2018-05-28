@@ -31,8 +31,13 @@ header {
 /*меню*/
 .menu a {
     background-color: #d6dcdf;
-    /*font-size: 18px;*/
-    padding: 20px 45px 20px 45px;
+    color: #272626;
+    font-size: 16px;
+    padding: 10px 25px 10px 25px;
+}
+
+ul {
+    display: flex;
 }
 
 /*активное меню*/
@@ -45,11 +50,17 @@ header {
     display: none;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 715px) {
     .header-container {
         width: 100%;
         display: flex;
         justify-content: space-around;
+    }
+
+    .menu {
+        /*width: 100px;*/
+        padding-left: 10px;
+        justify-content: left;
     }
 
     .main-menu {
@@ -64,14 +75,15 @@ header {
 
     .main-menu a {
         display: block;
-        padding: 8px;
+        padding: 6px;
     }
 
     .toggle-button {
-        text-align: center;
+        text-align: -moz-center;
         display: block;
         cursor: pointer;
-        /*color: ;*/
+        color: #272626;
+        margin-top: 15px;
     }
 
     .toggle-button:after {
@@ -82,14 +94,25 @@ header {
     #menu-checkbox:checked + nav[role="navigation"] .main-menu {
         display: block;
     }
+
     #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
         content: attr(data-close);
     }
-    .header-container a{
+
+    .header-container a {
         margin-right: -65px;
     }
-    .main-menu{
+
+    .main-menu {
+        text-align: left;
         position: relative;
-        top: 30px;
+        right: 10px;
     }
+
+    /*.menu li:hover {*/
+    /*background-color: #547689;*/
+    /*color: #fffefe;*/
+    /*padding-left: revert;*/
+    /*!*padding-right: 30px;*!*/
+    /*}*/
 }

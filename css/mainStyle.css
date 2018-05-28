@@ -1,4 +1,26 @@
-.imgMain{
-    height: 100%;
-    width: 100%;
+.top-slide {
+    background: url(../images/main/banner.png);
+    padding-top: 120px;
+    /*background-size: 100%;*/
+    /*width: 100%;*/
 }
+
+.top-container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.top-slide h2 {
+    display: inline;
+    font-size: 40px;
+    padding: 0 15px;
+}
+.top-slide h3 {
+    display: inline;
+    font-size: 20px;
+    padding: 0 15px;
+}
+
+/*.imgMain{*/
+/*width: 100%;*/
+/*}*/

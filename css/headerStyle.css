@@ -1,8 +1,19 @@
-.logo{
-    padding-top: 10px;
+.imgTel,
+.imgAddress {
+    height: 20px;
+}
+
+.imgLogo {
+    height: 120px;
+}
+
+.logo {
+    padding: 10px 0 10px 0;
 
 }
-.contact {
+
+.contactTel,
+.contactAddress {
     color: #fffefe;
-    /*font-size: 28px;*/
+    font-size: 16px;
 }
