@@ -1,0 +1,55 @@
+* {
+    font-family: 'Open Sans', regular;
+    color: #272626;
+    /*max-width: 1580px;*/
+    padding: 0;
+    margin: 0;
+}
+
+
+/*.header {*/
+/*grid-area: header;*/
+/*background-color: #547689;*/
+/*}*/
+
+/*.menu {*/
+/*grid-area: menu;*/
+/*background-color: #4e555b;*/
+/*}*/
+
+/*.main {*/
+/*grid-area: main;*/
+/*background-color: yellow;*/
+/*}*/
+/*.news{*/
+/*grid-area: news;*/
+/*background-color: green;*/
+
+/*}*/
+/*.footer {*/
+/*grid-area: footer;*/
+/*background-color: red;*/
+/*}*/
+
+/*.container {*/
+/*display: grid;*/
+/*grid-template-areas: "header header"*/
+/*"menu menu"*/
+/*"main news"*/
+/*"footer footer";*/
+/*grid-template-columns: 1fr 150px;*/
+/*grid-template-rows: 100px 50px 1fr 50px;*/
+/*min-height: 100vh;*/
+/*}*/
+/*@media screen and(max-width: 600px){*/
+/*.container{*/
+/*grid-template-areas: "header"*/
+/*"menu"*/
+/*"main"*/
+/*"news"*/
+/*"footer";*/
+/*grid-template-columns: 100%;*/
+/*grid-template-rows: 100px 50px 50px 1fr 50px;*/
+/*}*/
+
+/*}*/
