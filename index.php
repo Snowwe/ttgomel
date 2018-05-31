@@ -14,7 +14,6 @@ $page = "main";
     <link rel="stylesheet" href="css/style.css">
 
 
-
 </head>
 <body>
 
@@ -30,6 +29,7 @@ $page = "main";
 </nav>
 
 <section>
+
 
     <?php
         if(isset($_REQUEST["page"])) {
@@ -59,7 +59,11 @@ $page = "main";
     ?>
 
 </section>
-
+<footer>
+    <?php
+    include_once("html/footer.php");
+    ?>
+</footer>
 
 <!--<div class="container">-->
 <!--<header class="header">-->

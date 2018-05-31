@@ -62,3 +62,8 @@
     background: no-repeat url("../images/header/searchICO.png") ;
 
 }
+/*@media screen and (max-width: 715px) {*/
+    /*#search .input {*/
+        /*width: 180px;*/
+    /*}*/
+/*}*/

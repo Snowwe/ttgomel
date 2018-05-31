@@ -13,19 +13,19 @@
         </div>
     </div>
     <div class="logo">
-        <img src="../../images/main/img/logo.png" class="imgLogo"/></div>
+        <img src="../images/header/logo.png" class="imgLogo"/></div>
 
 <!--    <form name="search" method="post" action="search/index.php">-->
 <!--        <input type="search" name="query" placeholder="Поиск">-->
 <!--        <input type="submit" value="Найти">-->
 <!--    </form>-->
 
-<!--    <div class="search">-->
+    <div class="search">
         <form action="" method="post" id="search" class="search">
             <input type="search" name="" placeholder="Поиск по сайту" onblur="if(this.value=='')
                     this.value='Поиск по сайту';" onfocus="if(this.value=='Поиск по сайту')
                         this.value='';" class="input" />
             <input type="submit" name="" value="" class="submit" />
         </form>
-<!--    </div>-->
+    </div>
 </div>

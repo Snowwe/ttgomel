@@ -4,7 +4,7 @@
     <input type="checkbox" id="menu-checkbox">
     <nav role="navigation">
         <label for="menu-checkbox" class="toggle-button"
-               data-open="МЕНЮ" data-close="X" onclick> </label>
+               data-open="&#9776; Меню" data-close="&#9932;" onclick> </label>
         <ul class="main-menu">
             <li><a href="index.php?page=main">Главная</a></li>
             <li><a href="index.php?page=news">Новости</a></li>
@@ -12,6 +12,7 @@
             <li><a href="index.php?page=rating">Рейтинг</a></li>
             <li><a href="index.php?page=gallery">Галерея</a></li>
             <li><a href="index.php?page=contacts">Контакты</a></li>
+
         </ul>
     </nav>
 </div>

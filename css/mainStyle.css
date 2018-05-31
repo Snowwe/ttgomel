@@ -1,24 +1,28 @@
 .top-slide {
-    background: url(../images/main/banner.png);
-    padding-top: 120px;
-    /*background-size: 100%;*/
-    /*width: 100%;*/
+    background: url(../images/main/banner.png) no-repeat;
+    padding-top: 15%;
+    padding-bottom: 300px;
+    background-size: 100%;
+    width: 100%;
 }
 
 .top-container {
     width: 85%;
     margin: 0 auto;
+
 }
 
 .top-slide h2 {
     display: inline;
-    font-size: 40px;
+    font-size: 30px;
     padding: 0 15px;
+    color: #ffffff;
 }
 .top-slide h3 {
     display: inline;
-    font-size: 20px;
+    font-size: 15px;
     padding: 0 15px;
+    color: #ffffff;
 }
 
 /*.imgMain{*/
