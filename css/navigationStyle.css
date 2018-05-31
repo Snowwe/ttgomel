@@ -15,18 +15,7 @@ a {
     text-decoration: none;
 }
 
-header {
-    background-color: #547689;
-    padding: 0;
-}
 
-.header-container {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 /*меню*/
 .menu a {
@@ -50,13 +39,7 @@ ul {
     display: none;
 }
 
-@media screen and (max-width: 715px) {
-    .header-container {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
-
+@media screen and (max-width: 710px), only screen and (max-device-width: 480px) {
     .menu {
         /*width: 100px;*/
         padding-left: 10px;
