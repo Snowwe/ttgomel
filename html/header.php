@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="css/headerStyle.css">
-<link rel="stylesheet" href="css/searchStyle.css">
+<link rel="stylesheet" href="../css/headerStyle.css">
+<link rel="stylesheet" href="../css/searchStyle.css">
 
 <div class="header-container">
     <div class="contact">
@@ -9,7 +9,7 @@
         </div>
         <div class="contactAddress">
             <img src="../images/header/adr_header.png" class="imgAddress" alt="">
-            г.Гомель, ул.Рабочая, 17
+            г.Гомель, ул.Рабочая, 22
         </div>
     </div>
     <div class="logo">

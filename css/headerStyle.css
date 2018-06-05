@@ -34,14 +34,14 @@ header {
     align-items: center;
 }
 
-@media screen and (max-width: 715px), only screen and (max-device-width: 480px){
+@media screen and (max-width: 650px), only screen and (max-device-width: 480px){
     .header-container {
         display: grid;
         grid-template-areas: "logo contact"
                              "logo search";
-        grid-template-columns: 100px auto;
+        grid-template-columns: 120px auto;
         grid-template-rows: auto 1fr;
-        justify-content: space-around;
+        justify-content: left;
         padding-top: 10px;
     }
     .contactTel,

@@ -26,19 +26,20 @@
         </div>
         <div class="contactAddressFooter">
             <img src="../images/footer/footer_adr.png" alt="">
-            г.Гомель, ул.Рабочая, 17
+            г.Гомель, ул.Рабочая, 22
         </div>
     </div>
     <div class="copyright">
         <p class="year">&#9400; 2018</p>
-        <p class="design">Дизайн: <a href="#" target="_blank">
-                Маргарита Луня
-            </a>
-        </p>
         <p class="development">Разработка сайта:
             <a href="https://www.linkedin.com/in/snezhana-novitskaya/" target="_blank">
                 Снежана Новицкая
             </a>
         </p>
+        <p class="design">Дизайн: <a href="#" target="_blank">
+                Маргарита Луня
+            </a>
+        </p>
+
     </div>
 </div>
