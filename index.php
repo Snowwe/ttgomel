@@ -1,3 +1,4 @@
+<!--по умолчанию загружается главная страница-->
 <?php
 $page = "main";
 ?>
@@ -7,30 +8,31 @@ $page = "main";
 <head>
     <meta charset="UTF-8">
     <title>SC "Gomselmash"</title>
-
+    <!--подключаем иконку-->
     <link rel="shortcut icon" href="images/icon.ICO" type="image/x-icon">
+    <!--подключаем шрифт для всех страниц-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
+    <!--подключаем стили для общие для всех страниц-->
     <link rel="stylesheet" href="css/style.css">
 
 
 </head>
 <body>
 
+<!--загрузка header для всех страниц-->
 <header>
     <?php
     include_once("html/header.php");
     ?>
 </header>
+<!--загрузка меню для всех страниц-->
 <nav>
     <?php
     include_once("html/navigation.php");
     ?>
 </nav>
-
+<!--загрузка страницы в зависимости от выбора пункта меню-->
 <section>
-
-
     <?php
         if(isset($_REQUEST["page"])) {
             $page = $_REQUEST["page"];
@@ -59,33 +61,11 @@ $page = "main";
     ?>
 
 </section>
+<!--загрузка footer для всех страниц-->
 <footer>
     <?php
     include_once("html/footer.php");
     ?>
 </footer>
-
-<!--<div class="container">-->
-<!--<header class="header">-->
-<!--<div class="contact">-->
-<!---->
-<!--</div>-->
-<!---->
-<!--</header>-->
-<!--<div class="menu">-->
-
-<!--</div>-->
-<!--<div class="news">-->
-
-<!--</div>-->
-<!--<div class="main">-->
-
-<!--</div>-->
-<!--<footer class="footer">-->
-
-<!--</footer>-->
-
-<!--</div>-->
-
 
 </html>

@@ -1,3 +1,4 @@
+<!--подключаем стили для страницы Главная-->
 <link rel="stylesheet" href="../../css/mainStyle.css">
 
 <main>

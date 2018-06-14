@@ -1,0 +1,36 @@
+.calendar{
+
+}
+.calendar h2{
+    padding: 2%;
+    text-align: center;
+}
+.calendar hr{
+    width: 90%;
+    margin: auto;
+}
+.calendar table{
+min-width: 800px;
+    margin: 5%;
+    border-collapse: collapse; /*убираем пустые промежутки между ячейками*/
+    border: 2px solid grey; /*устанавливаем для таблицы внешнюю границу серого цвета толщиной 2px*/
+}
+.calendar th, td{
+    padding: 10px 15px;
+    border: 1px solid grey;
+}
+.calendar th:hover{
+    background: inherit;
+}
+.calendar tr:hover{
+    background: #b2c1ca;
+}
+.name{
+    width: 45%;
+}
+.date{
+    width: 85px;
+}
+.participants{
+    width: 90px;
+}
