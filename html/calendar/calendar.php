@@ -12,7 +12,8 @@ $link = mysqli_connect($host, $user, $password, $database)
 
 //получем текущую дату для отображения календаря с текущего месяца
 $currentDate=date("Y-m-d");
-$currentMonth=date("m");
+$currentMonth= (int)date("m");
+echo $currentMonth;
 $strMonth=date('F');
 $currentYear=date("Y");
 $arrMonthRus=[0,"Январь","Февраль","Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
@@ -48,14 +49,19 @@ echo
     </tr>";
     for ($i = 0 ; $i < $rows ; ++$i)
     {
+
         $row = mysqli_fetch_row($result);
+
         echo "<tr>";
             for ($j = 0 ; $j < 4 ; ++$j)
                {
-
-
-                   echo
-                "<td>$row[$j]</td>";
+                   if($j==1)
+                   {
+                       echo   "<td>$row[1]";
+                       echo " $arrMonthRus_2[$currentMonth]</td>";
+                   }
+                   else
+                       echo "<td>$row[$j]</td>";
                }
         echo "</tr>";
     }
@@ -88,3 +94,4 @@ mysqli_close($link);
 <!--{-->
 <!--echo   "<td>$row[1] $arrMonthRus_2[$currentMonth]</td>";-->
 <!--}-->
+

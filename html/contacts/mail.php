@@ -1,11 +1,11 @@
-<!doctype html>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>Ваше сообщение успешно отправлено</title>
-</head>
-
-<body>
+<!--<!doctype html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>-->
+<!--    <title>Ваше сообщение успешно отправлено</title>-->
+<!--</head>-->
+<!---->
+<!--<body>-->
 
 <?php
 $back = "<p><a href=\"javascript: history.back()\">Вернуться назад</a></p>";
@@ -46,5 +46,5 @@ if (!empty($_POST['name']) and !empty($_POST['phone']) and !empty($_POST['mail']
 //mail($to, $tema, $message, $headers);
 
 ?>
-</body>
-</html>
+<!--</body>-->
+<!--</html>-->

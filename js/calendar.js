@@ -11,7 +11,7 @@ $(document).ready(function () {
     });
     $("#btn4").click(function () {
         $(".english").hide("slow");
-        $(".studied").show("slow").css("font-size", "18px");;
+        $(".studied").show("slow").css("font-size", "18px");
         $(".work").hide("slow") //css("display", "block").
     });
 });

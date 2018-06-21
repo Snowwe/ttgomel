@@ -12,8 +12,10 @@
             г.Гомель, ул.Рабочая, 22
         </div>
     </div>
+
     <div class="logo">
-        <img src="../images/header/logo.png" class="imgLogo"/></div>
+        <img src="../images/header/logo.png" class="imgLogo"/>
+    </div>
 
 <!--    <form name="search" method="post" action="search/index.php">-->
 <!--        <input type="search" name="query" placeholder="Поиск">-->

@@ -1,5 +1,6 @@
 .ourContact {
     grid-area: ourContact;
+
 }
 
 .contactTelName {
@@ -10,7 +11,10 @@
     grid-area: imgTelContact;
 
 }
+/*.contactTelName:hover{*/
+    /*background: url("../../images/whatsapp_viber_telegram_1.jpg") no-repeat;*/
 
+/*}*/
 .contactTelContact {
     display: grid;
     margin-top: 6%;
@@ -117,5 +121,23 @@
 
 .contactFromContacts img {
     padding-right: 5%;
+
+}
+
+@media screen and (max-width: 650px), only screen and (max-device-width: 600px){
+  .contactFromContacts{
+      margin: 5% 0;
+      text-align: justify;
+      display: grid;
+      padding-top: 40px;
+      grid-template-areas: "ourContact" "feedback" "payMe" "mapClub";
+      grid-template-columns: auto;
+
+  }
+    .feedback{
+        margin: 5% 0;
+    }
+
+
 
 }
