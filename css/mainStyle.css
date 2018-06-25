@@ -1,7 +1,6 @@
 /*задаем гриды для адаптации страницы*/
 .aboutUs {
     grid-area: aboutUs;
-    /*padding-top: 40px;*/
 }
 
 .newsShort {
@@ -10,17 +9,14 @@
 
 .sportRoom {
     grid-area: sportRoom;
-    /*padding: 25px 0 0 10px;*/
 }
 
 .tourney {
     grid-area: tourney;
-    /*padding: 25px 10px 0 0;*/
 }
 
 .inventory {
     grid-area: inventory;
-    /*padding: 25px 0 0 10px;*/
 }
 /*ширина картинок на главной странице*/
 main img {
@@ -29,23 +25,17 @@ main img {
 }
 .imgSportRoom {
     grid-area: imgSportRoom;
-    /*padding: 20px 10px 10px 0;*/
     float: left;
     margin: 0 1em 1em 0;
 }
 .imgTourney {
     grid-area: imgTourney;
-
-    /*max-width: 300px;*/
-    /*padding: 40px 10px 10px 0;*/
     float: right;
     margin: 1em 0 1em 1em;
 }
 
 .imgInventory {
     grid-area: imgInventory;
-
-    /*padding: 20px 10px 10px 0;*/
     float: left;
     margin: 0 1em 1em 0;
 }
@@ -55,8 +45,6 @@ main h3 {
 }
 
 main {
-    margin: 0 10% 5% 10%;
-    /*font-size: 100%;*/
     text-align: justify;
 }
 
@@ -83,8 +71,7 @@ main {
     padding-top: 25%;
     padding-bottom: 10%;
     background-size: 100%;
-    width: 100%;
-
+    margin-top: -5%;
 }
 
 .tourney a,

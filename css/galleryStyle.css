@@ -1,0 +1,105 @@
+
+.gallery{
+    /*display: flex;*/
+    justify-content: center;
+
+}
+.video {
+    /*padding: 5%;*/
+    /*width: 80%;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*flex-wrap: wrap;*/
+}
+.gallery iframe{
+    /*position: relative;*/
+    /*margin-bottom: 2%;*/
+    /*padding: 1%;*/
+    width: 30%;
+    height: 315px;
+ }
+.gallery hr{
+    margin-bottom: 40px;
+}
+.gallery h3{
+    padding-top: 35px;
+}
+.gallery img{
+    width: 100%;
+
+    max-width: 255px;
+}
+
+/*.gallery img:hover{*/
+    /*—moz-transform: scale(1.6); !* эффект трансформации для Firefox до версии 16.0 *!*/
+    /*—webkit-transform: scale(1.6); !* эффект трансформации для Chrome до версии 26.0, Safari, Android и iOS *!*/
+    /*—o-transform: scale(1.8); !* эффект трансформации для Opera до версии 12.10 *!*/
+    /*—ms-transform: scale(1.8); !* эффект трансформации для IE 9.0 *!*/
+    /*transform: scale(1.8); !* эффект трансформации для других браузеров *!*/
+/*border: 10px;*/
+/*}*/
+/*задаём гриды для адаптации страницы*/
+.trainerOne{
+    grid-area: trainerOne;
+    justify-content: space-around;
+    /*text-align: center;*/
+    display: grid;
+    grid-template-areas: "imgTrainerOne trainerInfoOne";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+}
+.imgTrainerOne{
+    grid-area: imgTrainerOne;
+    /*position: revert;*/
+
+}
+.trainerInfoOne{
+    grid-area: trainerInfoOne;
+    padding-left: 4%;
+
+}
+.gallery p{
+    font-size: 80%;
+    padding-top: 6%;
+}
+.trainerTwo{
+    grid-area: trainerTwo;
+    justify-content: space-around;
+
+    display: grid;
+    grid-template-areas: "imgTrainerTwo trainerInfoTwo";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+}
+.imgTrainerTwo{
+    grid-area: imgTrainerTwo;
+}
+.trainerInfoTwo{
+    grid-area: trainerInfoTwo;
+    padding-left: 4%;
+
+}
+.ourTrainers{
+    justify-content: space-around;
+
+    display: grid;
+    grid-template-areas: "trainerOne trainerTwo";
+    grid-template-columns: 49% 49%;
+    grid-template-rows: auto;
+ }
+
+
+
+@media only screen and (max-width: 800px), only screen and (max-device-width: 480px) {
+    .ourTrainers{
+        justify-content: space-around;
+
+        display: grid;
+        grid-template-areas: "trainerOne" "trainerTwo";
+        grid-template-columns: auto;
+        grid-template-rows: 100%;
+    }
+    .trainerOne{
+        padding-bottom: 4%;
+    }
+}

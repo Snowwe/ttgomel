@@ -98,31 +98,28 @@
     font-style: italic;
     /*text-decoration: underline #005cbf;*/
 }
-.copyright a:hover{
+
+.copyright a:hover {
     color: #dcdcdc;
 }
 
 @media only screen and (max-width: 640px), only screen and (max-device-width: 480px) {
     .sponsors {
         display: grid;
-        grid-template-areas: "ourSponsors"
-        "gomselmash"
-        "belneft";
+        grid-template-areas: "ourSponsors" "gomselmash" "belneft";
         /*grid-template-columns: auto;*/
         grid-template-rows: 70px 50px 50px;
     }
-    .contactFooter{
+
+    .contactFooter {
         display: grid;
-        grid-template-areas:
-        "contactTelFooter"
-        "contactEmailFooter"
-        "contactAddressFooter";
+        grid-template-areas: "contactTelFooter" "contactEmailFooter" "contactAddressFooter";
         grid-template-rows: 35px 35px 35px;
     }
-    .copyright{
+
+    .copyright {
         display: grid;
-        grid-template-areas:
-        "year" "development" "disign" ;
+        grid-template-areas: "year" "development" "disign";
     }
 }
 

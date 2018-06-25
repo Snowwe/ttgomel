@@ -1,7 +1,7 @@
 <!--подключаем стили для страницы Новости-->
 <link rel="stylesheet" href="../../css/newsStyle.css">
 
-<section class="news_container">
+<div class="news_container">
 
      <?php
 require_once 'js/connection.php'; // подключаем скрипт
@@ -44,4 +44,4 @@ mysqli_close($link);
 
 
 
-</section>
+</div>

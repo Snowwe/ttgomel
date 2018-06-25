@@ -1,7 +1,7 @@
 <!--подключаем стили для страницы Контакты-->
 <link rel="stylesheet" href="../../css/contactStyle.css">
 
-<section class="contactFromContacts">
+<div class="contactFromContacts">
 
     <div class="ourContact">
         <h2>Наши контакты</h2>
@@ -66,7 +66,7 @@
     </div>
 
 
-</section>
+</div>
 
 <!-- проверка формы. -->
 <script src="../../js/contactFeedback.js"></script>

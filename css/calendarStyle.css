@@ -1,36 +1,44 @@
-.calendar{
+.calendar {
 
 }
-.calendar h2{
+
+.calendar h2 {
     padding: 2%;
     text-align: center;
 }
-.calendar hr{
+
+.calendar hr {
     width: 90%;
     margin: auto;
 }
-.calendar table{
-min-width: 800px;
-    margin: 5%;
+
+.calendar table {
+    min-width: 800px;
     border-collapse: collapse; /*убираем пустые промежутки между ячейками*/
     border: 2px solid grey; /*устанавливаем для таблицы внешнюю границу серого цвета толщиной 2px*/
 }
-.calendar th, td{
+
+.calendar th, td {
     padding: 10px 15px;
     border: 1px solid grey;
 }
-.calendar th:hover{
+
+.calendar th:hover {
     background: inherit;
 }
-.calendar tr:hover{
+
+.calendar tr:hover {
     background: #b2c1ca;
 }
-.name{
+
+.name {
     width: 45%;
 }
-.date{
+
+.date {
     width: 94px;
 }
-.participants{
+
+.participants {
     width: 85px;
 }

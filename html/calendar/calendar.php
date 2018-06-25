@@ -1,7 +1,7 @@
 <!--подключаем стили для страницы Календарь-->
 <link rel="stylesheet" href="../../css/calendarStyle.css">
 
-<section class="calendar">
+<div class="calendar">
     <?php
 require_once 'js/connection.php'; // подключаем скрипт
 
@@ -81,7 +81,7 @@ if($currentMonth==12){
 mysqli_close($link);
 ?>
     
-</section>
+</div>
 
 <!--   setlocale(LC_ALL,  'ru_RU.CP1251', 'rus_RUS.CP1251', 'Russian_Russia.1251');-->
 

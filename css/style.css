@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+section{
+    margin: 4.2% 8% 5% 8%;
+}
+
 
 /*.header {*/
 /*grid-area: header;*/
