@@ -35,7 +35,7 @@ $imgSportsman = get_img($dir);
     <div class="ourSportsmen">
         <h3>Наши спортсмены</h3>
         <hr>
-        <article></article>
+
         <?php foreach ($imgSportsman as $image): ?>
 
         <div class="gallerySportsmen">
