@@ -45,6 +45,7 @@ a.current_menu,
         padding-left: 10px;
         justify-content: left;
         /*overflow: hidden;*/
+        z-index: 10;
 
     }
 /*.menu label[data-close]{*/
@@ -77,7 +78,6 @@ a.current_menu,
     .toggle-button:after {
         content: attr(data-open);
         display: block;
-
     }
 
     #menu-checkbox:checked + nav[role="navigation"] .main-menu {

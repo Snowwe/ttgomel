@@ -28,7 +28,7 @@ if (!empty($_POST['name']) and !empty($_POST['phone']) and !empty($_POST['mail']
         , 'Вам написал: ' . $name . '<br />Его номер: ' . $phone . '<br />Его почта: ' . $mail . '<br />  Его сообщение: ' . $message
         , $headers);
 
-    echo "Ваше сообщение успешно отправлено!<Br> Если Вы корректно указали Вашу контактную информацию, то Вы получите ответ в ближайшее время<Br> $back";
+    echo "Ваше сообщение успешно отправлено!<Br> Если Вы корректно указали Вашу контактную информацию, то получите ответ в ближайшее время<Br> $back";
     $_GET['name'] = "";
     exit;
 } else {
@@ -36,14 +36,6 @@ if (!empty($_POST['name']) and !empty($_POST['phone']) and !empty($_POST['mail']
     exit;
 }
 
-
-//$message = "Ваше имя: " . $_POST['name'] . "<br>";//присвоить переменной значение, полученное из формы name=name
-//$message .= "E-mail: " . $_POST['email'] . "<br>"; //полученное из формы name=email
-//$message .= "Номер телефона: " . $_POST['phone'] . "<br>"; //полученное из формы name=phone
-//$message .= "Сообщение: " . $_POST['message'] . "<br>"; //полученное из формы name=message
-//$headers = 'MIME-Version: 1.0' . "\r\n"; // заголовок соответствует формату плюс символ перевода строки
-//$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n"; // указывает на тип посылаемого контента
-//mail($to, $tema, $message, $headers);
 
 ?>
 <!--</body>-->

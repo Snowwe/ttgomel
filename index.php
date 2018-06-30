@@ -56,6 +56,13 @@ $page = "main";
             case "contacts":
                 include_once("html/contacts/contacts.php");
                 break;
+
+            case "mail":
+                include_once("html/contacts/mail.php");
+                break;
+            case "fullNews":
+                include_once("html/news/fullNews.php");
+                break;
         };
 
     ?>

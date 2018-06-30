@@ -80,7 +80,9 @@ if($currentMonth==12){
 // закрываем подключение
 mysqli_close($link);
 ?>
-    
+    <div class="calendarFileDownload">
+
+    </div>
 </div>
 
 <!--   setlocale(LC_ALL,  'ru_RU.CP1251', 'rus_RUS.CP1251', 'Russian_Russia.1251');-->

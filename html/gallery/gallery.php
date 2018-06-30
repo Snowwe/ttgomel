@@ -3,6 +3,8 @@ include $_SERVER['DOCUMENT_ROOT'] . "/js/gallery.php";
 $dir = $_SERVER['DOCUMENT_ROOT'] . "/images/gallery_sportsmen/";
 $shortDir = "../../images/gallery_sportsmen/";
 $imgSportsman = get_img($dir);
+$f = $_SERVER['DOCUMENT_ROOT'] . "/images/gallery_sportsmen/00_infoSportsmen.txt";//файл, где находится инфо о спортсменах
+$infoSp = get_img_info($f);
 
 ?>
 
@@ -23,7 +25,8 @@ $imgSportsman = get_img($dir);
             </div>
         </div>
         <div class="trainerTwo">
-            <img src="../../images/gallery_trainer/2_Ostapenko_E_main.jpg" alt="Остапенко Елена Николаевна"
+            <img src="../../images/gallery_trainer/2_Ostapenko_E_main.jpg"
+                 alt="Остапенко Елена Николаевна"
                  title="Остапенко Елена Николаевна" class="imgTrainerTwo">
             <div class="trainerInfoTwo">
                 <h4>Остапенко Елена Николаевна</h4>
@@ -32,19 +35,37 @@ $imgSportsman = get_img($dir);
         </div>
     </div>
 
+
+
     <div class="ourSportsmen">
         <h3>Наши спортсмены</h3>
         <hr>
-
-        <?php foreach ($imgSportsman as $image): ?>
-
         <div class="gallerySportsmen">
-            <div>
-                <a rel="lightbox -mygallery" data-lightbox="lightbox" href="<?php echo $shortDir .$image ?>">
-                <img src="<?php echo $shortDir . $image ?>" >
+        <?php
+        $rows = count($imgSportsman);
+
+        $j = 0;
+        foreach ($imgSportsman
+
+                 as $image): ?>
+            <?php
+            $infoSpShort = explode(";", $infoSp[$j]);
+            ?>
+
+            <div class="sportsman">
+                <a rel="lightbox -mygallery" data-lightbox="lightbox" href="<?php echo $shortDir . $image ?>">
+                    <img src="<?php echo $shortDir . $image ?>" title="<?php echo $infoSp[$j] ?>" class="imgSportsman">
+                    <span class="infoSportsman"><?php
+                        echo $infoSpShort[0];
+                        ?></span>
+                    <span class="fullInfoSportsman"><?php
+                        echo $infoSpShort[1];
+                        ?></span>
 
             </div>
-            <?php endforeach; ?>
+            <?php
+            $j++;
+        endforeach; ?>
 
         </div>
     </div>

@@ -38,7 +38,7 @@
     </div>
 
     <div class="feedback">
-        <form method="post" action="http://ttgomel/html/contacts/mail.php" onSubmit="return checkForm(this)" id="feedback-form">
+        <form method="post" action="http://ttgomel/index.php?page=mail" onSubmit="return checkForm(this)" id="feedback-form">
 <div class="feedbackHead">ОБРАТНАЯ СВЯЗЬ</div>
 
             <label for="name">Имя:</label>

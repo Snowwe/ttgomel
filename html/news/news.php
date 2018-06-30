@@ -10,11 +10,10 @@ require_once 'js/connection.php'; // подключаем скрипт
 $link = mysqli_connect($host, $user, $password, $database)
     or die("Ошибка " . mysqli_error($link));
 
-
 // выполняем операции с базой данных
 //выбираем данные, сортируем по дате
 
-    $query ="SELECT image_url, title, dateOfNews, content
+    $query ="SELECT image_url, title, dateOfNews, id_news
           FROM news n 
           ORDER BY n.dateOfNews DESC";
 
@@ -29,13 +28,16 @@ $link = mysqli_connect($host, $user, $password, $database)
                  $row = mysqli_fetch_row($result);
                  echo   "<div class='news_item'>
                             <img src='$row[0]' alt='' class='imgNews'>
-                            <div class='titleNews'><a href='#' class='titleNews'>$row[1]</a></div>
-                            <div class='dateNews'>$row[2]</div>
+                            <div class='titleNews'>
+                            <a href='http://ttgomel/index.php?page=fullNews?id=$row[3]' class='titleNews'>$row[1]</a>
+                            </div>
+                             <div class='dateNews'>$row[2]</div>
                          </div>";
              }
              echo "</div>";
     }
-
+    // http://ttgomel/index.php?page=fullNews id=$row[3]
+    // ../html/news/fullNews.php?id=$row[3]
 // закрываем подключение
 mysqli_close($link);
 ?>
