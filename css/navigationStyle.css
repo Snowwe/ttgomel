@@ -1,7 +1,10 @@
 .menu {
+
     background-color: #d6dcdf;
     display: flex;
     justify-content: center;
+    width: 100%;
+
 }
 
 li {
@@ -44,8 +47,8 @@ a.current_menu,
         width: 100%;
         padding-left: 10px;
         justify-content: left;
-        /*overflow: hidden;*/
-        z-index: 10;
+        top: 135px; /* Position the menu at the top of the page */
+        z-index: 2;
 
     }
 /*.menu label[data-close]{*/

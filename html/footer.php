@@ -36,7 +36,7 @@
                 Снежана Новицкая
             </a>
         </p>
-        <p class="design">Дизайн: <a href="#" target="_blank">
+        <p class="design">Дизайн: <a href="https://vk.com/mlunya" target="_blank">
                 Маргарита Луня
             </a>
         </p>

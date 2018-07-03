@@ -1,7 +1,6 @@
 try {
     var el = document.getElementById('menu').getElementsByTagName('a');
     var url = document.location.href;
-    console.log(url);
     for (var i = 0; i < el.length; i++) {
         if (url == el[i].href) {
             el[i].className += ' current_menu';
