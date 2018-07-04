@@ -14,3 +14,6 @@ $(window).scroll(function () {
         $('.btn-up').removeClass('active');
     }
 });
+
+
+

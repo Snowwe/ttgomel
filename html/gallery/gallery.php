@@ -3,14 +3,17 @@ include $_SERVER['DOCUMENT_ROOT'] . "/js/gallery.php";
 $dir = $_SERVER['DOCUMENT_ROOT'] . "/images/gallery_sportsmen/";
 $shortDir = "../../images/gallery_sportsmen/";
 $imgSportsman = get_files($dir);
-//unset($imgSportsman[0]);
 $f = $_SERVER['DOCUMENT_ROOT'] . "/images/gallery_sportsmen/00_infoSportsmen.txt";//файл, где находится инфо о спортсменах
 $infoSp = get_img_info($f);
 
 ?>
 
-<!--подключаем стили для страницы Контакты-->
+<!--подключаем стили для страницы Галерея-->
 <link rel="stylesheet" href="../../css/galleryStyle.css">
+<!--<link rel="stylesheet" type="text/css" media="all" href="../../css/lightbox/jquery.lightbox-0.5.css">-->
+<link rel="stylesheet" href="../../owlcarousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="../../owlcarousel/assets/owl.theme.default.min.css">
+<link href="../../lightbox/css/lightbox.css" rel="stylesheet">
 
 <div class="gallery">
     <h3>Наши тренеры</h3>
@@ -41,30 +44,30 @@ $infoSp = get_img_info($f);
     <div class="ourSportsmen">
         <h3>Наши спортсмены</h3>
         <hr>
-        <div class="gallerySportsmen">
+
+        <div class="owl-carousel  gallerySportsmen">
             <?php
             $rows = count($imgSportsman);
 
             $j = 0;
             foreach ($imgSportsman
 
-                     as $image)
-            { ?>
+                     as $image) { ?>
                 <?php
                 $infoSpShort = explode(";", $infoSp[$j]);
                 ?>
 
-                <div class="sportsman">
-                    <a rel="lightbox -mygallery" data-lightbox="lightbox" href="<?php echo $shortDir . $image ?>">
-                        <img src="<?php echo $shortDir . $image ?>" title="<?php echo $infoSp[$j] ?>"
-                             class="imgSportsman">
+                <div class="sportsman " >
+                    <a  href="<?php echo $shortDir . $image ?>" data-title="<?php echo $infoSpShort[0]; ?>"  data-lightbox="sportsman">
+
+                        <img src="<?php echo $shortDir . $image ?>" class="imgSportsman">
                         <span class="infoSportsman"><?php
                             echo $infoSpShort[0];
                             ?></span>
                         <span class="fullInfoSportsman"><?php
                             echo $infoSpShort[1];
                             ?></span>
-
+                    </a>
                 </div>
                 <?php
                 $j++;
@@ -97,4 +100,11 @@ $infoSp = get_img_info($f);
 
 </div>
 
-<!--<script src="../../js/jquery-3.2.1.min.js"></script>-->
+<script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+
+<script src="../../owlcarousel/owl.carousel.min.js"></script>
+<script src="../../lightbox/js/lightbox.js"></script>
+<script src="../../js/gallery.js"></script>

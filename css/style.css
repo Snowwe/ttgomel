@@ -8,13 +8,16 @@
 section {
     margin: 192px 8% 5% 8%;
 }
+
+/*позиция header & menu на странице всегда вверху*/
 .top {
-    position: fixed; /* Set the menu to fixed position */
-    top: 0; /* Position the menu at the top of the page */
+    position: fixed; /* привязывается к указанной точке на экране и не меняет своего положения при прокрутке веб-страницы */
+    top: 0; /* точка привязки на экране */
     z-index: 50;
     width: 100%;
     justify-content: center;
 }
+/*точка */
 #top{
     display: flex;
     z-index: 100;
