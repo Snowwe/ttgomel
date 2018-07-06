@@ -52,13 +52,6 @@
 }
 
 /**/
-.calendarRB p{
-    padding-top: 3.5%;
-    font-style: italic;
-    color: #2c5d8c;
-}
-
-/**/
 .calendarFileDownload{
     padding-top: 2%;
 }
@@ -67,13 +60,11 @@
     margin-top: 1.5%;
 }
 
-.calendarFileDownload a,
-.calendarRB a{
+.calendarFileDownload a{
     text-decoration: underline;
 }
 
-.calendarFileDownload a:hover,
-.calendarRB a:hover{
+.calendarFileDownload a:hover{
     color: #7f96a4;
     text-decoration: underline #7f96a4;
 }

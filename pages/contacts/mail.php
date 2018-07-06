@@ -1,15 +1,10 @@
-<!--<!doctype html>-->
-<!--<html>-->
-<!--<head>-->
-<!--    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>-->
-<!--    <title>Ваше сообщение успешно отправлено</title>-->
-<!--</head>-->
-<!---->
-<!--<body>-->
+<!--подключаем стили общие для всех страниц-->
+<link rel="stylesheet" href="../../css/style.css">
 
 <?php
-$back = "<p><a href=\"javascript: history.back()\">Вернуться назад</a></p>";
 
+// подключаем скрипт,где хранятся общие данные
+require_once $_SERVER['DOCUMENT_ROOT'] . '/scripts/changeInfo.php';
 
 if (!empty($_POST['name']) and !empty($_POST['phone']) and !empty($_POST['mail'])
     and !empty($_POST['message'])) {
@@ -20,7 +15,7 @@ if (!empty($_POST['name']) and !empty($_POST['phone']) and !empty($_POST['mail']
     $mail = trim(strip_tags($_POST['mail']));//полученное из формы email
     $message = trim(strip_tags($_POST['message']));//полученное из формы сообщение
     $headers = 'MIME-Version: 1.0' . "\r\n"; // заголовок соответствует формату плюс символ перевода строки
-    $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n"; // указывает на тип посылаемого контента
+    $headers .= 'Content-type: text/pages; charset=utf-8' . "\r\n"; // указывает на тип посылаемого контента
 
     //отправляет получателю на емайл значения переменных
     mail($to
@@ -28,7 +23,7 @@ if (!empty($_POST['name']) and !empty($_POST['phone']) and !empty($_POST['mail']
         , 'Вам написал: ' . $name . '<br />Его номер: ' . $phone . '<br />Его почта: ' . $mail . '<br />  Его сообщение: ' . $message
         , $headers);
 
-    echo "Ваше сообщение успешно отправлено!<Br> Если Вы корректно указали Вашу контактную информацию, то получите ответ в ближайшее время<Br> $back";
+    echo "$name! <br> Ваше сообщение успешно отправлено!<br> Если Вы корректно указали Вашу контактную информацию, то получите ответ в ближайшее время<br> $back";
     $_GET['name'] = "";
     exit;
 } else {
@@ -38,5 +33,3 @@ if (!empty($_POST['name']) and !empty($_POST['phone']) and !empty($_POST['mail']
 
 
 ?>
-<!--</body>-->
-<!--</html>-->

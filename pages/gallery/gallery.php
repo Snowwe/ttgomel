@@ -1,5 +1,5 @@
 <?php
-include $_SERVER['DOCUMENT_ROOT'] . "/js/gallery.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/scripts/gallery.php";
 $dir = $_SERVER['DOCUMENT_ROOT'] . "/images/gallery_sportsmen/";
 $shortDir = "../../images/gallery_sportsmen/";
 $imgSportsman = get_files($dir);
@@ -11,9 +11,9 @@ $infoSp = get_img_info($f);
 <!--подключаем стили для страницы Галерея-->
 <link rel="stylesheet" href="../../css/galleryStyle.css">
 <!--<link rel="stylesheet" type="text/css" media="all" href="../../css/lightbox/jquery.lightbox-0.5.css">-->
-<link rel="stylesheet" href="../../owlcarousel/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="../../owlcarousel/assets/owl.theme.default.min.css">
-<link href="../../lightbox/css/lightbox.css" rel="stylesheet">
+<link rel="stylesheet" href="../../modules/owlcarousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="../../modules/owlcarousel/assets/owl.theme.default.min.css">
+<link href="../../modules/lightbox/css/lightbox.css" rel="stylesheet">
 
 <div class="gallery">
     <h3>Наши тренеры</h3>
@@ -22,7 +22,7 @@ $infoSp = get_img_info($f);
         <div class="trainerOne">
             <img src="../../images/gallery_trainer/1_Shutov_A_main.jpg" alt="Шутов Андрей Васильевич"
                  title="Шутов Андрей Васильевич"
-                 class="imgTrainerOne" onclick="hover">
+                 class="imgTrainerOne">
             <div class="trainerInfoOne">
                 <h4>Шутов Андрей Васильевич</h4>
                 <p>Старший тренер отделения н/тенниса высшей категории, МС, победитель областных, республиканских и
@@ -105,6 +105,6 @@ $infoSp = get_img_info($f);
         integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
         crossorigin="anonymous"></script>
 
-<script src="../../owlcarousel/owl.carousel.min.js"></script>
-<script src="../../lightbox/js/lightbox.js"></script>
-<script src="../../js/gallery.js"></script>
+<script src="../../modules/owlcarousel/owl.carousel.min.js"></script>
+<script src="../../modules/lightbox/js/lightbox.js"></script>
+<script src="../../scripts/gallery.js"></script>

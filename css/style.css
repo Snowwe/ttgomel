@@ -6,22 +6,14 @@
 }
 
 section {
-    margin: 192px 8% 5% 8%;
+    margin: 3% 8% 5% 8%;
 }
 
-/*позиция header & menu на странице всегда вверху*/
-.top {
-    position: fixed; /* привязывается к указанной точке на экране и не меняет своего положения при прокрутке веб-страницы */
-    top: 0; /* точка привязки на экране */
-    z-index: 50;
-    width: 100%;
-    justify-content: center;
-}
 /*точка */
-#top{
-    display: flex;
-    z-index: 100;
-}
+/*#top{*/
+    /*display: flex;*/
+    /*z-index: 100;*/
+/*}*/
 .btn-up {
     position: fixed;
     bottom: -50px;
@@ -48,7 +40,30 @@ section {
     right: 0;
     margin: auto;
 }
-
+.nav.active{
+    position: fixed; /* привязывается к указанной точке на экране и не меняет своего положения при прокрутке веб-страницы */
+    top: 0; /* точка привязки на экране */
+    z-index: 50;
+    width: 100%;
+    justify-content: center;
+}
 .btn-up.active {
     bottom: 39%;
 }
+
+/*ссылки на страницах на сайт http://bttf.by*/
+.bttf p{
+    padding-top: 3.5%;
+    font-style: italic;
+    color: #2c5d8c;
+}
+
+.bttf a{
+    text-decoration: underline;
+}
+
+.bttf a:hover{
+    color: #7f96a4;
+    text-decoration: underline #7f96a4;
+}
+

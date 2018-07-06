@@ -1,14 +1,12 @@
+<!--подключаем стили общие для всех страниц-->
+<link rel="stylesheet" href="../../css/style.css">
 <!--подключаем стили для страницы Календарь-->
 <link rel="stylesheet" href="../../css/calendarStyle.css">
 
 <div class="calendar">
     <?php
-    require_once 'js/connection.php'; // подключаем скрипт
-
-    // подключаемся к серверу
-    $link = mysqli_connect($host, $user, $password, $database)
-    or die("Ошибка " . mysqli_error($link));
-
+    // подключаем скрипт подключения к базе данных
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/scripts/connection.php';
 
     //получем текущую дату для отображения календаря с текущего месяца
     $currentDate = date("Y-m-d");
@@ -78,7 +76,7 @@
     mysqli_close($link);
     ?>
 
-    <div class="calendarRB">
+    <div class="bttf">
         <p>Ознакомиться с календарем соревнований Республики Беларусь можно
             <a href="http://bttf.by/index.php/ru/world-calendar/kalendar-2018/62-kalendar-sorevnovanij" target="_blank">
                 по ссылке ...</a></p>
@@ -88,9 +86,9 @@
     <div class="calendarFileDownload">
 
         <?php
-        include $_SERVER['DOCUMENT_ROOT'] . "/js/gallery.php";
-        $dir = $_SERVER['DOCUMENT_ROOT'] . "/html/calendar/downloadCalendarFile/";
-        $shortDir = "../../calendar/downloadCalendarFile/";
+        include $_SERVER['DOCUMENT_ROOT'] . "/scripts/gallery.php";
+        $dir = $_SERVER['DOCUMENT_ROOT'] . "/pages/calendar/downloadCalendarFile/";
+        $shortDir = "../pages/calendar/downloadCalendarFile/";
         $calendarFiles = get_files($dir);
         rsort($calendarFiles);
         foreach ($calendarFiles
@@ -106,19 +104,4 @@
 
         endforeach; ?>
     </div>
-
-
 </div>
-
-<!--   setlocale(LC_ALL,  'ru_RU.CP1251', 'rus_RUS.CP1251', 'Russian_Russia.1251');-->
-
-<!--echo strftime('%b', $currentMonth);-->
-
-<!--"UPDATE `calendar` SET lc_time_names = 'ru_RU'";-->
-
-<!--{-->
-<!--if($row[1])-->
-<!--{-->
-<!--echo   "<td>$row[1] $arrMonthRus_2[$currentMonth]</td>";-->
-<!--}-->
-

@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/navigationStyle.css">
+<link rel="stylesheet" href="/css/navigationStyle.css">
 
 <div class="menu" >
     <input type="checkbox" id="menu-checkbox">
@@ -17,4 +17,4 @@
     </nav>
 
 </div>
-<script src="../js/navigationCurrent.js"></script>
+<script src="../scripts/navigationCurrent.js"></script>

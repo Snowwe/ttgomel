@@ -19,21 +19,22 @@ $page = "main";
 </head>
 <body>
 <!--точка возврата при прокрутке-->
-<p id="top"></p>
-<div class="top">
+<!--<p id="top"></p>-->
+<!--<div class="top">-->
 <!--загрузка header для всех страниц-->
 <header>
     <?php
-    include_once("html/header.php");
+    include_once("pages/header.php");
     ?>
 </header>
 <!--загрузка меню для всех страниц-->
 <nav class="nav">
     <?php
-    include_once("html/navigation.php");
+    include_once("pages/navigation.php");
     ?>
 </nav>
-</div>
+
+<!--</div>-->
 <!--загрузка страницы в зависимости от выбора пункта меню-->
 <section>
     <?php
@@ -42,30 +43,34 @@ $page = "main";
     }
     switch ($page) {
         case "main":
-            include_once("html/main/main.php");
+            include_once("pages/main/main.php");
             break;
         case "news":
-            include_once("html/news/news.php");
+            include_once("pages/news/news.php");
             break;
         case "calendar":
-            include_once("html/calendar/calendar.php");
+            include_once("pages/calendar/calendar.php");
             break;
         case "rating":
-            include_once("html/rating/rating.php");
+            include_once("pages/rating/rating.php");
             break;
         case "gallery":
-            include_once("html/gallery/gallery.php");
+            include_once("pages/gallery/gallery.php");
             break;
         case "contacts":
-            include_once("html/contacts/contacts.php");
+            include_once("pages/contacts/contacts.php");
             break;
 
         case "mail":
-            include_once("html/contacts/mail.php");
+            include_once("pages/contacts/mail.php");
             break;
         case "fullNews":
-            include_once("html/news/fullNews.php");
+            include_once("pages/news/fullNews.php");
             break;
+        case "admin":
+            include_once("pages/admin/admin.php");
+            break;
+
     };
 
     ?>
@@ -77,9 +82,9 @@ $page = "main";
 <!--загрузка footer для всех страниц-->
 <footer>
     <?php
-    include_once("html/footer.php");
+    include_once("pages/footer.php");
     ?>
 </footer>
 
-<script src="js/index.js"></script>
+<script src="scripts/index.js"></script>
 </html>
