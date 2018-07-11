@@ -83,7 +83,7 @@
 .owl-prev, .owl-next {
     width: 30px;
     height: 30px;
-    position: absolute;
+    position: absolute; /*Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет. */
     top: 50%;
     margin-top: -10px;
 }
@@ -92,6 +92,9 @@
 }
 .owl-next {
     right: 5px;
+}
+.lb-caption{
+    color: #c6c8ca;
 }
 
 span.fullInfoSportsman,
@@ -105,7 +108,7 @@ span.infoSportsman,
     padding: 15px;
     width: 89%;
     max-width: 200px;
-    position: absolute;
+    position: absolute; /*Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет. */
     bottom: 0;
     background: #ffffff;
     opacity: 0.65;
@@ -125,7 +128,7 @@ span.infoSportsman,
 }
 
 .gallery iframe {
-    position: relative;
+    position: relative; /*Положение элемента устанавливается относительно его исходного места*/
     margin-bottom: 2%;
     width: 33%;
 }
@@ -134,6 +137,11 @@ span.infoSportsman,
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.aVideoMore{
+    padding-top: 35px;
+    font-size: 90%;
+}
+
 @media only screen and (max-width: 800px), only screen and (max-device-width: 480px) {
     .ourTrainers {
         justify-content: space-around;
@@ -151,7 +159,7 @@ span.infoSportsman,
         /*width: 33%;*/
     /*}*/
     .gallery iframe {
-        position: relative;
+        position: relative; /*Положение элемента устанавливается относительно его исходного места*/
         margin-bottom: 2%;
         width: 100%;
     }

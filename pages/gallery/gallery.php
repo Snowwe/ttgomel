@@ -58,7 +58,7 @@ $infoSp = get_img_info($f);
                 ?>
 
                 <div class="sportsman " >
-                    <a  href="<?php echo $shortDir . $image ?>" data-title="<?php echo $infoSpShort[0]; ?>"  data-lightbox="sportsman">
+                    <a  href="<?php echo $shortDir . $image ?>" data-title="<?php echo $infoSpShort[0].'<br>'.$infoSpShort[1]; ?>"  data-lightbox="sportsman">
 
                         <img src="<?php echo $shortDir . $image ?>" class="imgSportsman">
                         <span class="infoSportsman"><?php
@@ -85,8 +85,8 @@ $infoSp = get_img_info($f);
                    target="_blank">Больше
                     видео на нашем канале &rarr;</a>
             </div>
-            <hr>
         </div>
+        <hr>
         <div class="videos">
             <iframe src="https://www.youtube.com/embed/q0up7k63_bI" frameborder="0" allow="autoplay; encrypted-media"
                     allowfullscreen></iframe>

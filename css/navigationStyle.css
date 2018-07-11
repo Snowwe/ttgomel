@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-   position: relative;
+   position: relative; /*Положение элемента устанавливается относительно его исходного места*/
 }
 
 li {
@@ -43,11 +43,11 @@ a.current_menu,
 
 @media screen and (max-width: 710px), only screen and (max-device-width: 480px) {
     .menu {
-        position: absolute;
+        position: absolute; /*Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет. */
         width: 100%;
         padding-left: 10px;
         justify-content: left;
-        top: 135px; /* Position the menu at the top of the page */
+        top: 0; /* Position the menu at the top of the page */
         z-index: 2;
 
     }
@@ -97,7 +97,7 @@ a.current_menu,
 
     .main-menu {
         text-align: left;
-        position: relative;
+        position: relative; /*Положение элемента устанавливается относительно его исходного места*/
         right: 10px;
     }
 

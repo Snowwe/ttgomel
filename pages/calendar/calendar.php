@@ -6,7 +6,9 @@
 <div class="calendar">
     <?php
     // подключаем скрипт подключения к базе данных
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/scripts/connection.php';
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/scripts/database.php';
+    //вызываем функцию подключения к БД
+    $link = db_connect();
 
     //получем текущую дату для отображения календаря с текущего месяца
     $currentDate = date("Y-m-d");

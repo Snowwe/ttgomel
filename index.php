@@ -18,9 +18,6 @@ $page = "main";
 
 </head>
 <body>
-<!--точка возврата при прокрутке-->
-<!--<p id="top"></p>-->
-<!--<div class="top">-->
 <!--загрузка header для всех страниц-->
 <header>
     <?php
@@ -33,7 +30,7 @@ $page = "main";
     include_once("pages/navigation.php");
     ?>
 </nav>
-
+<a href="admin">Login</a>
 <!--</div>-->
 <!--загрузка страницы в зависимости от выбора пункта меню-->
 <section>
@@ -66,9 +63,6 @@ $page = "main";
             break;
         case "fullNews":
             include_once("pages/news/fullNews.php");
-            break;
-        case "admin":
-            include_once("pages/admin/admin.php");
             break;
 
     };

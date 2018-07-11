@@ -27,7 +27,9 @@
             <h3>Новости клуба</h3>
             <?php
             // подключаем скрипт подключения к базе данных
-            require_once $_SERVER['DOCUMENT_ROOT'] . '/scripts/connection.php';
+            require_once $_SERVER['DOCUMENT_ROOT'] . '/scripts/database.php';
+            //вызываем функцию подключения к БД
+            $link = db_connect();
 
             $query = "SELECT title, dateOfNews, id_news
                       FROM news n 

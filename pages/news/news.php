@@ -4,53 +4,36 @@
 <div class="news_container">
 
     <?php
-    // подключаем скрипт,где хранятся общие данные
+    // подключаем скрипт, где хранятся общие данные
     require_once $_SERVER['DOCUMENT_ROOT'] . '/scripts/changeInfo.php';
     // подключаем скрипт подключения к базе данных
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/scripts/connection.php';
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/scripts/database.php';
+    // подключаем скрипт работы с таблицей новости
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/scripts/news.php';
+    //вызываем функцию подключения к БД
+    $link = db_connect();
 
+    //вызываем функцию получения всех новостей из БД
+    $arrNews = articles_all($link);
 
-    // выполняем операции с базой данных
-    //выбираем данные, сортируем по дате
+    //вызываем функцию получения начальной новости на текущей странице с новостями
+    $startNewsOnPage = start_news();
+    // КОЛИЧЕСТВО СТРАНИЦ ДЛЯ ОТОБРАЖЕНИЯ
+    $pages = $rows / $countNewsOnPage;
 
-    $query = "SELECT image_url, title, dateOfNews, id_news
-          FROM news n 
-          ORDER BY n.dateOfNews DESC";
+    echo "<div class='news'>";
 
-    $result = mysqli_query($link, $query) or die("Ошибка " . mysqli_error($link));
-    $startNewsOnPage;
-    if(!isset($_REQUEST['startPage'])){
-        $startNewsOnPage=0;
-    }else{
-        $startNewsOnPage=$_REQUEST['startPage']*2-2;
-    }
-
-    if ($result) {
-        $rows = mysqli_num_rows($result); // количество полученных строк
-        //формируем массив новостей
-        $arrNews=[];
-        for ($i = 0; $i < $rows; ++$i) {
-            array_push($arrNews,mysqli_fetch_row($result));
-        }
-
-//        КОЛИЧЕСТВО СТРАНИЦ ДЛЯ ОТОБРАЖЕНИЯ
-        $pages = $rows / $countNewsOnPage; // количество страниц
-
-        echo "<div class='news'>";
-
-        for ($i = $startNewsOnPage; $i < $countNewsOnPage+$startNewsOnPage; ++$i) {
-            $row = $arrNews[$i];
-            echo "<div class='news_item'>
-                            <img src='$row[0]' alt='' class='imgNews'>
+    for ($i = $startNewsOnPage; $i < $countNewsOnPage + $startNewsOnPage; ++$i) {
+        $row = $arrNews[$i];
+        echo "<div class='news_item'>
+                            <img src='$row[4]' alt='' class='imgNews'>
                             <div class='titleNews'>
-                            <a href='http://ttgomel/index.php?page=fullNews&id=$row[3]' class='titleNews'>$row[1]</a>
+                            <a href='http://ttgomel/index.php?page=fullNews&id=$row[0]' class='titleNews'>$row[1]</a>
                             </div>
-                             <div class='dateNews'>$row[2]</div>
+                             <div class='dateNews'>$row[3]</div>
                          </div>";
-        }
-        echo "</div>";
-
     }
+    echo "</div>";
 
     //формируем пагинацию
     echo "<div class='pages'> Страница: ";
@@ -58,11 +41,8 @@
         echo "<a href='http://ttgomel/index.php?page=news&startPage=$i'>[ $i ]</a>";
     }
     echo "</div>";
-    // http://ttgomel/index.php?page=fullNews id=$row[3]
-    // ../pages/news/fullNews.php?id=$row[3]
+
     // закрываем подключение
     mysqli_close($link);
     ?>
-
-
 </div>

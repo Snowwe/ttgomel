@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Admin Panel"
-AuthUserFile C:/xampp/htdocs/blog/admin/.htpasswd
+AuthUserFile c:\OSPanel\domains\ttgomel\admin\.htpasswd
 Require valid-user

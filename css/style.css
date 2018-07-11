@@ -33,7 +33,7 @@ section {
     border-top: 2px solid #c6c8ca;
     border-left: 2px solid #c6c8ca;
     transform: rotate(45deg);
-    position: absolute;
+    position: absolute; /*Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет. */
     top: 4px;
     bottom: 0;
     left: 0;
