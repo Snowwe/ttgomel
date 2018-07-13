@@ -113,7 +113,11 @@ main {
 .dateNews {
     font-size: 75%;
 }
-
+@media screen and (max-width: 710px), only screen and (max-device-width: 480px) {
+    .top-container{
+        margin-top: 3%;
+    }
+}
 /*.top-container {*/
 /*width: 85%;*/
 /**/

@@ -1,11 +1,10 @@
 <?php
-include $_SERVER['DOCUMENT_ROOT'] . "/scripts/gallery.php";
+include $_SERVER['DOCUMENT_ROOT'] . "/scripts/galleryScriptPHP.php";
 $dir = $_SERVER['DOCUMENT_ROOT'] . "/images/gallery_sportsmen/";
 $shortDir = "../../images/gallery_sportsmen/";
 $imgSportsman = get_files($dir);
 $f = $_SERVER['DOCUMENT_ROOT'] . "/images/gallery_sportsmen/00_infoSportsmen.txt";//файл, где находится инфо о спортсменах
 $infoSp = get_img_info($f);
-
 ?>
 
 <!--подключаем стили для страницы Галерея-->
@@ -39,7 +38,6 @@ $infoSp = get_img_info($f);
             </div>
         </div>
     </div>
-
 
     <div class="ourSportsmen">
         <h3>Наши спортсмены</h3>
@@ -107,4 +105,4 @@ $infoSp = get_img_info($f);
 
 <script src="../../modules/owlcarousel/owl.carousel.min.js"></script>
 <script src="../../modules/lightbox/js/lightbox.js"></script>
-<script src="../../scripts/gallery.js"></script>
+<script src="../../scripts/galleryScript.js"></script>

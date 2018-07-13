@@ -30,7 +30,7 @@ $page = "main";
     include_once("pages/navigation.php");
     ?>
 </nav>
-<a href="admin">Login</a>
+<!--<a href="admin">Login</a>-->
 <!--</div>-->
 <!--загрузка страницы в зависимости от выбора пункта меню-->
 <section>
@@ -80,5 +80,5 @@ $page = "main";
     ?>
 </footer>
 
-<script src="scripts/index.js"></script>
+<script src="scripts/indexScript.js"></script>
 </html>

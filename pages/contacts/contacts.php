@@ -69,4 +69,4 @@
 </div>
 
 <!-- проверка формы. -->
-<script src="../../scripts/contactFeedback.js"></script>
+<script src="../../scripts/contactFeedbackScript.js"></script>

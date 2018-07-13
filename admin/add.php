@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/adminStyle.css">
     <title>Document</title>
 </head>
 
@@ -23,22 +23,18 @@
         <label for="date"> Дата статьи *</label>
         <input type="date" name="date" id="date" value="" class="form-item" required><br>
 
-
         <label for="photo1"> Главное фото *</label>
-        <input type="text" name="photo1" value="../../images/news/standartNews.gif" class="form-item" required>
-        <!--        <input type="file" name="photo1" class="form-photo" id="photo1" value="standartNews.gif" required>-->
+        <input type="text" name="photo1" id="photo1" value="../../images/news/standartNews.gif" class="form-photo"
+               required>
 
-        <label for="photo2"> Фото 2
-            <input type="file" name="photo2" class="form-photo"></label>
-        <!--        <input type="text" name="photo2" value="" class="form-control">-->
+        <label for="photo2"> Фото 2</label>
+        <input type="text" name="photo2" id="photo2" value="" class="form-photo">
 
-        <label for="photo3"> Фото 3 </label>
-        <input type="file" name="photo3" class="form-photo">
-        <!--        <input type="text" name="photo3" value="" class="form-control">-->
+        <label for="photo3"> Фото 3</label>
+        <input type="text" name="photo3" id="photo3" value="" class="form-photo">
 
         <label for="photo4"> Фото 4</label>
-        <input type="file" name="photo4" class="form-photo">
-        <!--        <input type="text" name="photo4" value="" class="form-control">-->
+        <input type="text" name="photo4" id="photo4" value="" class="form-photo">
 
         <label for="photo5"> Фото 5</label>
         <input type="text" name="photo5" id="photo5" value="" class="form-photo">
@@ -57,17 +53,10 @@
 
         <p>* - поля обязательные для заполнения</p>
         <input type="submit" value="Сохранить" class="btn">
-        <!--        </div>-->
+
     </form>
 
 </div>
 </body>
 </html>
 
-<?php
-/**
- * Created by PhpStorm.
- * User: Снежана
- * Date: 10.07.2018
- * Time: 22:56
- */

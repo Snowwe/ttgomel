@@ -12,7 +12,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/scripts/changeInfo.php';
 // подключаем скрипт подключения к базе данных
 require_once $_SERVER['DOCUMENT_ROOT'] . '/scripts/database.php';
 // подключаем скрипт работы с таблицей новости
-require_once $_SERVER['DOCUMENT_ROOT'] . '/scripts/news.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/scripts/newsScript.php';
 //вызываем функцию подключения к БД
 $link = db_connect();
 $row = articles_get($link, $_REQUEST["id"]);
@@ -22,7 +22,14 @@ $row = articles_get($link, $_REQUEST["id"]);
         <h3><?php echo $row[1] ?></h3>
         <hr>
         <div class='dateFullNews'><?php echo $row[3] ?></div>
-        <?php for ($j = 4; $j <= 12; ++$j) {
+        <div class='contentFullNews'>
+            <a href='<?php echo $row[4] ?>' data-lightbox='imgFullNews'>
+                <img src='<?php echo $row[4] ?>' alt='' class='imgFullNewsFirst'>
+            </a>
+            <?php echo $row[2] ?>
+        </div>
+
+        <?php for ($j = 5; $j <= 12; ++$j) {
             if ($row[$j]) { ?>
                 <a href='<?php echo $row[$j] ?>' data-lightbox='imgFullNews'>
                     <img src='<?php echo $row[$j] ?>' alt='' class='imgFullNews'>
@@ -30,11 +37,9 @@ $row = articles_get($link, $_REQUEST["id"]);
                 <?php
             }
         } ?>
-
-        <div class='contentFullNews'><?php echo $row[2] ?></div>
     </div>
 
-<?php
+    <?php
     // закрываем подключение
     mysqli_close($link);
 
@@ -46,9 +51,9 @@ $row = articles_get($link, $_REQUEST["id"]);
         integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
         crossorigin="anonymous"></script>
 
-<script src="../../modules/owlcarousel/owl.carousel.min.js"></script>
+<!--<script src="../../modules/owlcarousel/owl.carousel.min.js"></script>-->
 <script src="../../modules/lightbox/js/lightbox.js"></script>
-<script src="../../scripts/gallery.js"></script>
+<!--<script src="../../scripts/gallery.js"></script>-->
 
 
 

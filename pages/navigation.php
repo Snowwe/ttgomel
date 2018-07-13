@@ -17,4 +17,4 @@
     </nav>
 
 </div>
-<script src="../scripts/navigationCurrent.js"></script>
+<script src="../scripts/navigationCurrentScript.js"></script>

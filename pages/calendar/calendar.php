@@ -88,7 +88,7 @@
     <div class="calendarFileDownload">
 
         <?php
-        include $_SERVER['DOCUMENT_ROOT'] . "/scripts/gallery.php";
+        include $_SERVER['DOCUMENT_ROOT'] . "/scripts/galleryScriptPHP.php";
         $dir = $_SERVER['DOCUMENT_ROOT'] . "/pages/calendar/downloadCalendarFile/";
         $shortDir = "../pages/calendar/downloadCalendarFile/";
         $calendarFiles = get_files($dir);
