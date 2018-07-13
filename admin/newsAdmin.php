@@ -38,10 +38,3 @@
 </div>
 </body>
 </html>
-<?php
-/**
- * Created by PhpStorm.
- * User: Снежана
- * Date: 10.07.2018
- * Time: 14:20
- */

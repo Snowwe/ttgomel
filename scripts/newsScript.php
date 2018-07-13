@@ -70,26 +70,29 @@ function articles_edit($link, $id, $title, $content, $date, $image, $image2, $im
 //убираем слева и справа пробелы
     $title = trim($title);
     $content = trim($content);
-    $content = trim($date);
-    $content = trim($image);
-    $content = trim($image2);
-    $content = trim($image3);
-    $content = trim($image4);
-    $content = trim($image5);
-    $content = trim($image6);
-    $content = trim($image7);
-    $content = trim($image8);
-    $content = trim($image9);
+    $date = trim($date);
+    $image = trim($image);
+    $image2 = trim($image2);
+    $image3 = trim($image3);
+    $image4 = trim($image4);
+    $image5 = trim($image5);
+    $image6 = trim($image6);
+    $image7 = trim($image7);
+    $image8 = trim($image8);
+    $image9 = trim($image9);
     if ($title == '')
         return false;
 
-    $upd = "UPDATE news SET title='%s'
-            , content='%s', dateOfNews='%s'
+    $upd = "UPDATE news 
+            SET title='%s'
+            , content='%s'
+            , dateOfNews='%s'
             , image_url='%s', image_url_2='%s'
             , image_url_3='%s', image_url_4='%s'
             , image_url_5='%s', image_url_6='%s'
             , image_url_7='%s', image_url_8='%s', image_url_9='%s' 
             WHERE id_news='%d'";
+
     $query = sprintf($upd
         , mysqli_real_escape_string($link, $title)
         , mysqli_real_escape_string($link, $content)

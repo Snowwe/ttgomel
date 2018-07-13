@@ -44,6 +44,7 @@ else if ($action == 'edit') {
             , $_POST['photo8'], $_POST['photo9']);
         header("location: index.php");
     }
+    echo   $_POST['content'];
     $article = articles_get($link, $id);
     include('edit.php');
 }
